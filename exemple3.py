@@ -6,15 +6,19 @@
 # Exercice à corriger ensemble ...
 
 from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QLabel
-def Plus():
+
+
+def plus():
     val = int(lblResultat.text())
     val = val + 1
     lblResultat.setText(str(val))
 
-def Moins():
+
+def moins():
     val = int(lblResultat.text())
     val = val - 1
     lblResultat.setText(str(val))
+
 
 app = QApplication([])
 fen = QWidget()
@@ -24,17 +28,19 @@ fen.setGeometry(100, 100, 300, 200)
 lblResultat = QLabel(fen)
 lblResultat.setText("0")
 lblResultat.setGeometry(120, 50, 100, 40)
-#btnPlus
+
+# btnPlus
 btnPlus = QPushButton(fen)
 btnPlus.setText("Plus")
 btnPlus.setGeometry(20, 100, 100, 40)
-btnPlus.clicked.connect(Plus)
+btnPlus.clicked.connect(plus)
 
-#btnMoins
+
+# btnMoins
 btnMoins = QPushButton(fen)
 btnMoins.setText("Moins")
 btnMoins.setGeometry(150, 100, 100, 40)
-btnMoins.clicked.connect(Moins)
+btnMoins.clicked.connect(moins)
 
 
 fen.show()

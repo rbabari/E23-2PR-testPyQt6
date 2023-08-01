@@ -6,7 +6,7 @@ from PyQt6.QtWidgets import QApplication, QWidget, QMainWindow, QPushButton
 #-1 Étape : créer (instancier) un objet app de type QApplication qui provient de la librairie PyQt6
 app = QApplication([])
 #-2 Étape 2 : créer une objet fenetre QWidget
-fen = QWidget()
+fen = QMainWindow()
 #-3 Rentre la fentre visible
 fen.show()
 #-4 Execute l'applcation

@@ -1,11 +1,10 @@
 
 
-from PyQt6.QtWidgets import QApplication,QWidget,QLabel, QGridLayout, QPushButton
+from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QGridLayout, QPushButton
 # https://www.pythonguis.com/tutorials/pyqt6-layouts/
 
 app = QApplication([])
 fen = QWidget()
-
 #
 grid = QGridLayout()
 fen.setLayout(grid)
